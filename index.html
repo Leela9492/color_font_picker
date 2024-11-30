@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"
+     integrity="sha512-BNaRQnYJYiPSqHHDb58B0yaPfCu+Wgds8Gp/gU33kqBtgNS4tSPHuGibyoeqMV/TJlSKda6FXzoEyYGjTe+vXA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <h2 style="text-align:center">Color Font-Picker</h2>
+    <div class="container">
+        <div class="container1">
+                <h1 contenteditable="true" id="actualcontent" style="text-align:center;"></h1>
+                <button id="download">Download</button>
+        </div>
+        <div class="container2">
+            <div class="color-butn-container">
+                <b>Font Color</b><br>
+                <button class="colors" id="red" onclick="colorRed()"></button>
+                <button class="colors" id="orange" onclick="colorOrange()"></button>
+                <button class="colors" id="yellow" onclick="colorYellow()"></button>
+                <button class="colors" id="pink" onclick="colorPink()"></button>
+                <button class="colors" id="green" onclick="colorGreen()"></button>
+                <button class="colors" id="violet" onclick="colorViolet()"></button>
+                <button class="colors" id="blue" onclick="colorBlue()"></button>
+                <button class="colors" id="aqua" onclick="colorAqua()"></button>
+                <button class="colors" id="brown" onclick="colorBrown()"></button>
+                <button class="colors" id="white" onclick="colorWhite()"></button>
+                <button class="colors" id="gray" onclick="colorGray()"></button>
+                <button class="colors" id="black" onclick="colorBlack()"></button>
+                <button class="colors" id="darkblue" onclick="colorDarkblue()"></button>
+                <button class="colors" id="magenta" onclick="colorMagenta()"></button>
+                <button class="colors" id="gold" onclick="colorGold()"></button>
+            </div>
+            <div class="color-butn-container">
+                <b>Background Color</b><br>
+                <button class="bgcolors" id="bred" onclick="bgcolorRed()"></button>
+                <button class="bgcolors" id="borange" onclick="bgcolorOrange()"></button>
+                <button class="bgcolors" id="byellow" onclick="bgcolorYellow()"></button>
+                <button class="bgcolors" id="bpink" onclick="bgcolorPink()"></button>
+                <button class="bgcolors" id="bgreen" onclick="bgcolorGreen()"></button>
+                <button class="bgcolors" id="bviolet" onclick="bgcolorViolet()"></button>
+                <button class="bgcolors" id="bblue" onclick="bgcolorBlue()"></button>
+                <button class="bgcolors" id="baqua" onclick="bgcolorAqua()"></button>
+                <button class="bgcolors" id="bbrown" onclick="bgcolorBrown()"></button>
+                <button class="bgcolors" id="bwhite" onclick="bgcolorWhite()"></button>
+                <button class="bgcolors" id="bgray" onclick="bgcolorGray()"></button>
+                <button class="bgcolors" id="bblack" onclick="bgcolorBlack()"></button>
+                <button class="bgcolors" id="bdarkblue" onclick="bgcolorDarkblue()"></button>
+                <button class="bgcolors" id="bmagenta" onclick="bgcolorMagenta()"></button>
+                <button class="bgcolors" id="bgold" onclick="bgcolorGold()"></button>
+            </div>
+            <div class="font-picker">
+                <b>font picker</b><br>
+                <button class="font-buttons" onclick="fontpick('Lucida Calligraphy')" style="font-family:Harlow Solid Italic ;">Harlow Solid Italic</button>
+                <button class="font-buttons" onclick="fontpick('Franklin Gothic Heavy')" style="font-family:Franklin Gothic Heavy ;">Franklin Gothic Heavy</button>
+                <button class="font-buttons" onclick="fontpick('calibri')" style="font-family:calibri ;">Calibri</button>
+                <button class="font-buttons" onclick="fontpick('Edwardian Script ITC')" style="font-family:Edwardian Script ITC ;">Edwardian Script ITC</button>
+                <button class="font-buttons" onclick="fontpick('Brush Script MT')" style="font-family:Brush Script MT ;">Brush Script MT</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
